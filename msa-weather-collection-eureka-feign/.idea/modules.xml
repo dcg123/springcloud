@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/msa-weather-collection-eureka-feign.iml" filepath="$PROJECT_DIR$/msa-weather-collection-eureka-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/msa-weather-collection-eureka-feign_main.iml" filepath="$PROJECT_DIR$/.idea/modules/msa-weather-collection-eureka-feign_main.iml" group="msa-weather-collection-eureka-feign" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/msa-weather-collection-eureka-feign_test.iml" filepath="$PROJECT_DIR$/.idea/modules/msa-weather-collection-eureka-feign_test.iml" group="msa-weather-collection-eureka-feign" />
+    </modules>
+  </component>
+</project>

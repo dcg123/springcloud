@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.thymeleaf.extras:thymeleaf-extras-java8time:3.0.0.RELEASE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.thymeleaf.extras/thymeleaf-extras-java8time/3.0.0.RELEASE/f673be8c89294bd8f1c3ea870d0dd30afc96df23/thymeleaf-extras-java8time-3.0.0.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.thymeleaf.extras/thymeleaf-extras-java8time/3.0.0.RELEASE/753296c21f38a8eb20de23aff3d9ba21c6b9db/thymeleaf-extras-java8time-3.0.0.RELEASE-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
