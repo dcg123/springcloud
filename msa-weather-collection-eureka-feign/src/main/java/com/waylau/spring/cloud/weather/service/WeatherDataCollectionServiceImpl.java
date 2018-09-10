@@ -12,8 +12,6 @@ import org.springframework.web.client.RestTemplate;
 /**
  * Weather Data Collection Service.
  * 
- * @since 1.0.0 2017年11月26日
- * @author <a href="https://waylau.com">Way Lau</a> 
  */
 @Service
 public class WeatherDataCollectionServiceImpl implements WeatherDataCollectionService {

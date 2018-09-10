@@ -1,8 +1,8 @@
 package com.waylau.spring.cloud.weather.controller;
 
-import java.util.ArrayList;
 import java.util.List;
 
+import com.waylau.spring.cloud.weather.service.DataClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.waylau.spring.cloud.weather.service.CityClient;
 import com.waylau.spring.cloud.weather.service.WeatherReportService;
 import com.waylau.spring.cloud.weather.vo.City;
 /**
@@ -29,9 +28,9 @@ public class WeatherReportController {
 
 	@Autowired
 	private WeatherReportService weatherReportService;
-	
+
 	@Autowired
-	private CityClient cityClient;
+	private DataClient dataClient;
 	
 	@GetMapping("/cityId/{cityId}")
 	public ModelAndView getReportByCityId(@PathVariable("cityId") String cityId, Model model) throws Exception {
@@ -41,13 +40,13 @@ public class WeatherReportController {
 		try {
 			
 			// 由城市数据API微服务提供数据
-			cityList = cityClient.listCity();
+			cityList = dataClient.listCity();
 			
 		} catch (Exception e) {
 			logger.error("Exception!", e);
 		}
 		
-		model.addAttribute("title", "老卫的天气预报");
+		model.addAttribute("title", "小董的天气预报");
 		model.addAttribute("cityId", cityId);
 		model.addAttribute("cityList", cityList);
 		model.addAttribute("report", weatherReportService.getDataByCityId(cityId));

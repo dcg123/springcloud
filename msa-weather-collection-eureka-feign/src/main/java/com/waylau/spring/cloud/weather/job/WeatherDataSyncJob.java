@@ -17,8 +17,6 @@ import com.waylau.spring.cloud.weather.vo.City;
 /**
  * Weather Data Sync Job.
  * 
- * @since 1.0.0 2017年11月23日
- * @author <a href="https://waylau.com">Way Lau</a> 
  */
 public class WeatherDataSyncJob extends QuartzJobBean {
 	

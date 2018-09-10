@@ -17,8 +17,6 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 /**
  * HelloController Test.
  * 
- * @since 1.0.0 2017年11月20日
- * @author <a href="https://waylau.com">Way Lau</a> 
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest

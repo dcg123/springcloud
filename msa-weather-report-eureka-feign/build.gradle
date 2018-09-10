@@ -61,6 +61,8 @@ dependencies {
 
 	// Feign
 	compile('org.springframework.cloud:spring-cloud-starter-openfeign')
+	// Hystrix
+	compile('org.springframework.cloud:spring-cloud-starter-netflix-hystrix')
 
 	// 该依赖用于测试阶段
 	testCompile('org.springframework.boot:spring-boot-starter-test')

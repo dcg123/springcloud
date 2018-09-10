@@ -3,8 +3,6 @@ package com.waylau.spring.cloud.weather.vo;
 /**
  * City.
  * 
- * @since 1.0.0 2017年11月23日
- * @author <a href="https://waylau.com">Way Lau</a> 
  */
 public class City {
 	private String cityId;

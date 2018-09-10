@@ -16,8 +16,6 @@ import static org.hamcrest.Matchers.equalTo;
 /**
  * HelloController Test.
  * 
- * @since 1.0.0 2017年11月20日
- * @author <a href="https://waylau.com">Way Lau</a> 
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest

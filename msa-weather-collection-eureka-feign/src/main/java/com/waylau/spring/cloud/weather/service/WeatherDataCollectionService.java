@@ -3,8 +3,6 @@ package com.waylau.spring.cloud.weather.service;
 /**
  * Weather Data Collection Service.
  * 
- * @since 1.0.0 2017年11月26日
- * @author <a href="https://waylau.com">Way Lau</a> 
  */
 public interface WeatherDataCollectionService {
 

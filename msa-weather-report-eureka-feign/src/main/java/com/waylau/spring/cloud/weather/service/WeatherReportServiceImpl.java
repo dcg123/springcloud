@@ -15,12 +15,12 @@ import com.waylau.spring.cloud.weather.vo.WeatherResponse;
 @Service
 public class WeatherReportServiceImpl implements WeatherReportService {
 	@Autowired
-	private WeatherDataClient weatherDataClient;
+	private DataClient dataClient;
 	@Override
 	public Weather getDataByCityId(String cityId) {
 		
 		// 由天气数据API微服务来提供
-		WeatherResponse resp = weatherDataClient.getDataByCityId(cityId);
+		WeatherResponse resp = dataClient.getDataByCityId(cityId);
 		Weather data = resp.getData();
 		return data;
 	}

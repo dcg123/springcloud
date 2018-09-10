@@ -9,8 +9,6 @@ import org.springframework.web.client.RestTemplate;
 /**
  * Rest Configuration.
  * 
- * @since 1.0.0 2017年11月22日
- * @author <a href="https://waylau.com">Way Lau</a> 
  */
 @Configuration
 public class RestConfiguration {

@@ -13,8 +13,6 @@ import com.waylau.spring.cloud.weather.job.WeatherDataSyncJob;
 /**
  * Quartz Configuration.
  * 
- * @since 1.0.0 2017年11月23日
- * @author <a href="https://waylau.com">Way Lau</a> 
  */
 @Configuration
 public class QuartzConfiguration {
@@ -31,10 +29,9 @@ public class QuartzConfiguration {
 	// Trigger
 	@Bean
 	public Trigger weatherDataSyncTrigger() {
-		
 		SimpleScheduleBuilder schedBuilder = SimpleScheduleBuilder.simpleSchedule()
 				.withIntervalInSeconds(TIME).repeatForever();
-		
+
 		return TriggerBuilder.newTrigger().forJob(weatherDataSyncJobDetail())
 				.withIdentity("weatherDataSyncTrigger").withSchedule(schedBuilder).build();
 	}
