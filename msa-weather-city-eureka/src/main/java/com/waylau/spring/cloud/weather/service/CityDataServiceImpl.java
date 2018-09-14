@@ -15,8 +15,6 @@ import com.waylau.spring.cloud.weather.vo.CityList;
 /**
  * City Data Service.
  * 
- * @since 1.0.0 2017年11月23日
- * @author <a href="https://waylau.com">Way Lau</a> 
  */
 @Service
 public class CityDataServiceImpl implements CityDataService {
@@ -32,9 +30,7 @@ public class CityDataServiceImpl implements CityDataService {
 		while ((line = br.readLine()) !=null) {
 			buffer.append(line);
 		}
-		
 		br.close();
-		
 		// XML转为Java对象
 		CityList cityList = (CityList)XmlBuilder.xmlStrToOject(CityList.class, buffer.toString());
 		return cityList.getCityList();
